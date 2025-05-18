@@ -1,8 +1,3 @@
----
-title: Documentação do Projeto Álgebra Linear
-extra_css: ['custom.css']
----
-
 ## 📊 Projeto de Álgebra Linear — UFCA
 
 Este projeto foi desenvolvido como parte da disciplina de **Álgebra Linear** da **Universidade Federal do Cariri (UFCA)**. Seu objetivo é oferecer uma ferramenta visual e interativa para estudar conceitos como **espaços gerados pelas colunas, linhas, núcleo da matriz e núcleo da transposta** por meio de gráficos vetoriais no plano e no espaço.
