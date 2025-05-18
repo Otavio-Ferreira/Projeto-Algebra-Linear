@@ -1,5 +1,8 @@
-
 ---
+title: Documentação do Projeto Álgebra Linear
+extra_css: ['custom.css']
+---
+
 ## 📊 Projeto de Álgebra Linear — UFCA
 
 Este projeto foi desenvolvido como parte da disciplina de **Álgebra Linear** da **Universidade Federal do Cariri (UFCA)**. Seu objetivo é oferecer uma ferramenta visual e interativa para estudar conceitos como **espaços gerados pelas colunas, linhas, núcleo da matriz e núcleo da transposta** por meio de gráficos vetoriais no plano e no espaço.
@@ -73,6 +76,5 @@ Framework CSS para estilização responsiva e moderna. Usado para criar a interf
 Este projeto foi desenvolvido por **\[Otavio da Silva Ferreira]** como parte da disciplina de Álgebra Linear — UFCA.
 
 * GitHub: [github.com/seuusuario](https://github.com/Otavio-Ferreira)
-* Projeto online: [seuusuario.github.io/nome-do-repositorio](https://seuusuario.github.io/nome-do-repositorio)
 
 ---
