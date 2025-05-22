@@ -75,7 +75,7 @@ function validate(input, message) {
 
 function clear() {
     const resultado = document.getElementById("rref-result");
-    resultado.innerHTML = ''
+    resultado.innerHTML = '';
 }
 
 // Ao clicar no botão Gerar L.D.R chama essa função que salva os números digitados para gerar a matriz e salva em um campo oculto, esse campo é um textarea, dessa forma facilita para capturar os dados para calcular a forma linha degrau reduzida

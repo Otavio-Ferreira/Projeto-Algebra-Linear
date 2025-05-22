@@ -30,7 +30,6 @@ Framework CSS para estilização responsiva e moderna. Usado para criar a interf
 
 1. **Abrir o projeto**
 
-   * Baixe ou clone o repositório.
    * Abra o arquivo `index.html` em qualquer navegador moderno (como Chrome, Firefox, Edge).
 
 2. **Definir a dimensão da matriz**
@@ -56,6 +55,8 @@ Framework CSS para estilização responsiva e moderna. Usado para criar a interf
 
    * Os vetores de cada espaço são plotados graficamente usando ECharts em gráficos separados, facilitando a interpretação geométrica dos resultados.
 
+6. **Limpar Sessão**
+   * Clique em **“Limpar Sessão”** para iniciar novamente.
 ---
 
 ### 💡 Observações
@@ -70,6 +71,6 @@ Framework CSS para estilização responsiva e moderna. Usado para criar a interf
 
 Este projeto foi desenvolvido por **\[Otavio da Silva Ferreira]** como parte da disciplina de Álgebra Linear — UFCA.
 
-* GitHub: [github.com/seuusuario](https://github.com/Otavio-Ferreira)
+* GitHub: [github.com/Otavio-Ferreira](https://github.com/Otavio-Ferreira)
 
 ---

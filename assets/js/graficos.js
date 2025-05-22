@@ -69,15 +69,22 @@ function calcularNulAt(matriz) {
     return resolverSistemaHomogeneo(transposta);
 }
 
+// Função que aumenta a matriz
+function construirMatrizAumentada(matriz) {
+    return matriz.map(row => [...row, 0]);
+}
+
 function resolverSistemaHomogeneo(matriz) {
+    // Constroí a matriz aumentada
+    const aumentada = construirMatrizAumentada(matriz);
     // Escalona a matriz
     const r = rref(matriz);
     const linhas = r.length;
     const colunas = r[0].length;
     const pivots = new Set();
 
-    // Encontra as colunas que possuem pivôs
-    for (let i = 0; i < linhas; i++) {
+    // Encontra as colunas que possuem pivôs (sem contar a última)
+    for (let i = 0; i < r.length; i++) {
         for (let j = 0; j < colunas; j++) {
             if (Math.abs(r[i][j]) > 1e-6) {
                 pivots.add(j);
@@ -85,6 +92,16 @@ function resolverSistemaHomogeneo(matriz) {
             }
         }
     }
+
+    // Encontra as colunas que possuem pivôs
+    // for (let i = 0; i < linhas; i++) {
+    //     for (let j = 0; j < colunas; j++) {
+    //         if (Math.abs(r[i][j]) > 1e-6) {
+    //             pivots.add(j);
+    //             break;
+    //         }
+    //     }
+    // }
 
     // Identifica as variáveis livres colunas sem pivô
     const livres = [];
@@ -102,7 +119,7 @@ function resolverSistemaHomogeneo(matriz) {
         v[idx] = 1;
 
         // Preenche os valores das variáveis dependentes com pivô
-        for (let i = 0; i < linhas; i++) {
+        for (let i = 0; i < r.length; i++) {
             let leadIdx = r[i].findIndex(val => Math.abs(val) > 1e-6);
             if (leadIdx !== -1 && leadIdx < idx) {
                 v[leadIdx] = -r[i][idx];
